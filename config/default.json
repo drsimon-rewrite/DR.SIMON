@@ -1,0 +1,44 @@
+{
+  "model": {
+    "model_base": "lmsys/vicuna-7b-v1.5",
+    "device": "auto",
+    "sentence_model": "all-MiniLM-L6-v2",
+    "clip_path": "checkpoints/clip/ViT-L-14.pt",
+    "pretrain_mm_mlp_adapter": "checkpoints/vtimellm-vicuna-v1-5-7b-stage1/mm_projector.bin",
+    "stage2_path": "checkpoints/vtimellm-vicuna-v1-5-7b-stage2",
+    "stage3_path": "checkpoints/vtimellm-vicuna-v1-5-7b-stage3"
+  },
+  
+  "qrm": {
+    "similarity_threshold": 0.90,
+    "max_sentences": 2
+  },
+  
+  "besm": {
+    "n_segments": 10,
+    "overlap": 0.5,
+    "similarity_threshold": 0.99,
+    "fps": 2.0
+  },
+  
+  "qem": {
+    "top_k": 7,
+    "gap_threshold": 1.5,
+    "density_weight": 0.1,
+    "iou_threshold": 0.2
+  },
+  
+  "evaluation": {
+    "iou_thresholds": [0.3, 0.5, 0.7],
+    "save_predictions": true,
+    "save_visualizations": false
+  },
+  
+  "paths": {
+    "data_path": "data/medical/rewrited_query/medvqa_test_grouped.json",
+    "feat_folder": "data/medical/feature/test",
+    "output_dir": "results",
+    "log_dir": "logs",
+    "viz_dir": "visualizations"
+  }
+} 
