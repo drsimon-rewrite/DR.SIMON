@@ -2,19 +2,19 @@
 
 **Domain-wise Rewrite for Segment-Informed Medical Oversight Network**
 
-*"Implementation of "DR.SIMON: Domain-wise Rewrite for Segment-Informed Medical Oversight Network"*
-
-**[📄 Project Page](https://drsimon-rewrite.github.io/)**
+**[Project Page](https://drsimon-rewrite.github.io/)**
 
 ---
 ##  Overview
+**DR.SIMON** addresses the long-standing challenge of aligning medical terminology in queries with visual content for temporal grounding in medical videos.
+
+###  Pipeline
 
 <img src="https://github.com/user-attachments/assets/f075a4a8-221c-4f0f-9749-b6499f56cbb8" alt="DR.SIMON Pipeline" width="100%"/>
-*DR.SIMON Pipeline*
 
 ---
 
-## Installation
+##  Installation
 
 ### Quick Setup
 
@@ -34,7 +34,7 @@ pip install -r requirements.txt
 
 ### 1. Data Setup
 
-Follow the [ReVisionLLM format](https://github.com/Tanveer81/ReVisionLLM/tree/main/revisionllm/data) for video feature extraction:
+Follow the [ReVisionLLM instruction](https://github.com/Tanveer81/ReVisionLLM/tree/main/revisionllm/data) for video feature extraction:
 
 ```bash
 data/
@@ -51,7 +51,7 @@ data/
 
 ### 2.  Model Checkpoints
 
-Download pretrained models following [VTimeLLM structure](https://github.com/huangb23/VTimeLLM):
+Download pretrained models following [VTimeLLM instruction](https://github.com/huangb23/VTimeLLM):
 
 ```bash
 checkpoints/
